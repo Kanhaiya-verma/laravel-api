@@ -35,7 +35,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id)
+    public function store(Request $request)
     {
         $request->validate([
             'title' => 'required',
@@ -52,7 +52,7 @@ class ProductController extends Controller
             'category_id' => $request->category_id,
 
         ]);
-        return $product->with(Category::where('id', $id)->category_name);
+        return $product;
     }
 
     /**

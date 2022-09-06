@@ -7,8 +7,6 @@ use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-// BTAbKmZwegJvTEQPqvWKTksfmoBSqvYwGujrCMCC   Token
-
 //public route
 // Route::get('/students', [studentController::class, 'index']);
 // Route::get('/students/{id}', [studentController::class, 'show']);
